@@ -54,7 +54,7 @@ export default function index() {
       <FlatList
         data={filteredTodos}
         keyExtractor={(item) => item.id}
-        // ১. renderItem এখন একদম ক্লিন এবং শুধু কার্ডটি রেন্ডার করবে
+
         renderItem={({ item }) => (
           <TouchableOpacity onPress={() => router.push("/task-details")}>
             <View className="p-4 mx-4 mb-2 bg-zinc-900 border border-zinc-800 rounded-2xl flex-row justify-between items-center">
