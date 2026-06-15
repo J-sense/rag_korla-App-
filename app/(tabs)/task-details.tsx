@@ -132,8 +132,7 @@ export default function Details() {
       data={subscriptions}
       keyExtractor={(item) => item.id}
       ListHeaderComponent={renderHeader}
-      contentContainerStyle={{ paddingBottom: 40 }}
-      contentContainerClassName="pb-20"
+      contentContainerStyle={{ paddingBottom: 120 }}
       renderItem={({ item }: any) => (
         <>
           <Pressable
